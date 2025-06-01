@@ -1,0 +1,97 @@
+Microsoft(R) Server Maintenance Utility (Unicode) Version 16.0.1000
+Report was generated on "DESKTOP-MTRSVA7".
+Maintenance Plan: Plan de Mantenimiento BD Expedientes
+Duration: 00:00:02
+Status: Succeeded.
+Details:
+Back Up Database (Full) (DESKTOP-MTRSVA7)
+Backup Database on Local server connection
+Databases: ExpedientesClinicos
+Type: Full
+Append existing
+Task start: 2025-06-01T14:00:03.
+Task end: 2025-06-01T14:00:04.
+Success
+Command:BACKUP DATABASE [ExpedientesClinicos] TO  DISK = N''C:\Backups\ExpedientesClinicos_backup_2025_06_01_140003_9571067.bak'' WITH NOFORMAT, NOINIT,  NAME = N''ExpedientesClinicos_backup_2025_06_01_140003_9571067'', SKIP, REWIND, NOUNLOAD,  STATS = 10
+
+GO
+
+
+Reorganize Index (DESKTOP-MTRSVA7)
+Reorganize index on Local server connection
+Databases: ExpedientesClinicos
+Object: Tables and views
+Compact large objects
+Task start: 2025-06-01T14:00:05.
+Task end: 2025-06-01T14:00:05.
+Success
+Command:
+GO
+
+
+Update Statistics (DESKTOP-MTRSVA7)
+Update Statistics on Local server connection
+Databases: ExpedientesClinicos
+Object: Tables and views
+All existing statistics
+Task start: 2025-06-01T14:00:05.
+Task end: 2025-06-01T14:00:05.
+Success
+Command:use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[Establecimiento] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[EstudioDiagnostico] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[ExpedientesClinicos] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[ExploracionFisica] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[HistoriaClinica] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[NotasEvolucion] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[NotasInterconsulta] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[NotasMedicas] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[NotasTraslado] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[Paciente] 
+WITH FULLSCAN
+GO
+use [ExpedientesClinicos]
+GO
+UPDATE STATISTICS [dbo].[PrestadorServicios] 
+WITH FULLSCAN
+
+GO
+
+
