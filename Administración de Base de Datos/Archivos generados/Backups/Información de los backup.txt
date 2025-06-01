@@ -1,0 +1,2 @@
+ExpedientesClinicos_backup.bak - Es el respaldo generado por la tarea automática en el paso 3.
+ExpedientesClinicos_backup_2025_06_01:140003_9571067.bak - Es el respaldo generado por el plan de mantenimiento generado en el paso 4.
